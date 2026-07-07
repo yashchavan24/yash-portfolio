@@ -4,6 +4,18 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Projects — Yash Chavan</title>
+<meta name="description" content="Four live, deployed, open-source projects by Yash Chavan spanning cybersecurity tooling and full-stack web development.">
+<link rel="canonical" href="https://yash-portfolio-henna.vercel.app/projects.html">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#0B1220">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Yash Chavan">
+<meta property="og:title" content="Projects — Yash Chavan">
+<meta property="og:description" content="Four live, deployed, open-source projects spanning cybersecurity tooling and full-stack web development.">
+<meta property="og:url" content="https://yash-portfolio-henna.vercel.app/projects.html">
+<meta property="og:image" content="https://yash-portfolio-henna.vercel.app/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://yash-portfolio-henna.vercel.app/og-image.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
@@ -14,13 +26,17 @@
   <div class="nav-inner">
     <a href="index.html" class="logo">yash<span>.chavan</span></a>
     <nav class="nav-links">
-      <span class="page-links" style="display:flex; gap:30px;">
+      <span class="page-links" id="pageLinks">
         <a href="index.html">Home</a>
         <a href="projects.html">Projects</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
+        <a href="resume.pdf" target="_blank" rel="noopener" class="nav-cta">Résumé ↗</a>
       </span>
       <button id="langToggle" aria-label="Toggle language">日本語</button>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="pageLinks">
+        <span></span><span></span><span></span>
+      </button>
     </nav>
   </div>
 </header>
@@ -44,6 +60,7 @@
       <div class="grid-cards">
 
         <article class="card">
+          <img class="card-media" src="images/network-dashboard.png" alt="Network Security Dashboard showing live traffic, suspicious IPs, port scanner and event log" loading="lazy">
           <div class="card-top">
             <h3>Network Security Dashboard</h3>
             <span class="year">2025</span>
@@ -57,10 +74,12 @@
           </ul>
           <div class="card-links">
             <a href="https://net-security-dashboard.vercel.app" target="_blank" rel="noopener">Live demo ↗</a>
+            <a href="https://github.com/yashchavan24/net-security-dashboard" target="_blank" rel="noopener">GitHub ↗</a>
           </div>
         </article>
 
         <article class="card">
+          <img class="card-media" src="images/malware-scanner.png" alt="Malware Scanner command-line tool detecting malicious file patterns" loading="lazy">
           <div class="card-top">
             <h3>Malware Scanner</h3>
             <span class="year">2025</span>
@@ -76,6 +95,7 @@
         </article>
 
         <article class="card">
+          <img class="card-media" src="images/phishingshield.png" alt="PhishingShield command-line tool scoring a suspicious URL" loading="lazy">
           <div class="card-top">
             <h3>PhishingShield</h3>
             <span class="year">2025</span>
@@ -91,6 +111,7 @@
         </article>
 
         <article class="card">
+          <img class="card-media" src="images/nexus-feed.png" alt="Nexus social platform feed with communities, trending topics and who-to-follow" loading="lazy">
           <div class="card-top">
             <h3>Nexus — Social Community Platform</h3>
             <span class="year">2025</span>
@@ -104,6 +125,7 @@
           </ul>
           <div class="card-links">
             <a href="https://nexus-social-app-xi.vercel.app" target="_blank" rel="noopener">Live demo ↗</a>
+            <a href="https://github.com/yashchavan24/nexus-social-app" target="_blank" rel="noopener">GitHub ↗</a>
           </div>
         </article>
 

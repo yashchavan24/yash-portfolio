@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yash Chavan — Résumé</title>
+<style>
+  @page { size: A4; margin: 11mm 14mm; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #14213B;
+    line-height: 1.28;
+    font-size: 9.5pt;
+  }
+  a { color: #4F6EF7; text-decoration: none; }
+  header { border-bottom: 2px solid #14213B; padding-bottom: 8px; margin-bottom: 11px; }
+  header h1 { font-size: 22pt; letter-spacing: -0.5px; }
+  header .role { color: #4F6EF7; font-weight: 600; font-size: 11pt; margin-top: 2px; }
+  header .contact { margin-top: 6px; font-size: 9pt; color: #333; }
+  header .contact span { margin-right: 12px; white-space: nowrap; }
+  section { margin-bottom: 7px; }
+  h2 {
+    font-size: 10.5pt;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #7B5CFA;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 3px;
+    margin-bottom: 7px;
+  }
+  .summary { font-size: 9.6pt; color: #222; }
+  .entry { margin-bottom: 7px; }
+  .entry .row { display: flex; justify-content: space-between; gap: 10px; }
+  .entry .title { font-weight: 700; }
+  .entry .when { color: #666; font-size: 9pt; white-space: nowrap; }
+  .entry .sub { color: #4F6EF7; font-size: 9pt; margin-bottom: 2px; }
+  ul { margin: 3px 0 0 16px; }
+  li { margin-bottom: 2px; }
+  .skills-row { margin-bottom: 3px; }
+  .skills-row b { display: inline-block; min-width: 96px; color: #14213B; }
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 2px 20px; }
+  .muted { color: #666; }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Yash Chavan</h1>
+    <div class="role">Cybersecurity &amp; Full-Stack Developer</div>
+    <div class="contact">
+      <span>Nagpur, India</span>
+      <span><a href="mailto:yashchavan.2332@gmail.com">yashchavan.2332@gmail.com</a></span>
+      <span><a href="https://github.com/yashchavan24">github.com/yashchavan24</a></span>
+      <span><a href="https://linkedin.com/in/yash-chavan-b42905292">linkedin.com/in/yash-chavan</a></span>
+    </div>
+  </header>
+
+  <section>
+    <h2>Summary</h2>
+    <p class="summary">B.Tech Cyber Security student who builds and ships real, deployed security tools and full-stack
+    web applications. Hands-on with network monitoring, threat detection, and modern web stacks. Seeking a fresher /
+    entry-level cybersecurity or full-stack role in Japan, and actively preparing for it (Japanese language study, visa
+    pathway research).</p>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <div class="entry">
+      <div class="row">
+        <span class="title">B.Tech, Computer Science &amp; Engineering (Cyber Security)</span>
+        <span class="when">2024 — Present</span>
+      </div>
+      <div class="sub">St. Vincent Pallotti College of Engineering &amp; Technology (Autonomous), Nagpur</div>
+      <ul>
+        <li>Coursework: Network Security, Ethical Hacking, Cryptography, Programming Languages</li>
+        <li>Building security tools and full-stack projects independently alongside coursework</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+    <div class="entry">
+      <div class="row">
+        <span class="title">Network Security Dashboard</span>
+        <span class="when">2025</span>
+      </div>
+      <div class="sub">Python · React · Flask · SQLite · AbuseIPDB API · WebSockets</div>
+      <ul>
+        <li>Real-time traffic dashboard streaming over WebSockets, refreshing every 2 seconds</li>
+        <li>IP reputation lookups via AbuseIPDB (country, abuse score, reports) and a 13-port scanner with automated Gmail alerts + cooldown logic</li>
+        <li>Threats persisted to SQLite; backend on Render, frontend on Vercel. Live demo + open source</li>
+      </ul>
+    </div>
+    <div class="entry">
+      <div class="row">
+        <span class="title">Nexus — Social Community Platform</span>
+        <span class="when">2025</span>
+      </div>
+      <div class="sub">Next.js 14 · TypeScript · PostgreSQL · Prisma · Supabase · Redis</div>
+      <ul>
+        <li>Full-stack social platform: OAuth (GitHub + Google), real-time feed, interest-based communities, direct messaging</li>
+        <li>AI assistant via Claude API, WebSocket streaming, Cloudinary media storage, profile analytics</li>
+      </ul>
+    </div>
+    <div class="entry">
+      <div class="row">
+        <span class="title">Malware Scanner &amp; PhishingShield</span>
+        <span class="when">2025</span>
+      </div>
+      <div class="sub">Python</div>
+      <ul>
+        <li>Malware Scanner: detects malicious file patterns/signatures for file-level threat analysis</li>
+        <li>PhishingShield: analyzes URLs with pattern recognition + heuristics to flag phishing attempts</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Technical Skills</h2>
+    <div class="skills-row"><b>Languages</b> Python, TypeScript, JavaScript, SQL, PowerShell, C (basic)</div>
+    <div class="skills-row"><b>Security</b> Network monitoring, port scanning, IP reputation analysis, phishing detection, malware analysis, threat alerting</div>
+    <div class="skills-row"><b>Web</b> Next.js 14, React 18, Tailwind CSS, Framer Motion, REST APIs, WebSockets, NextAuth.js</div>
+    <div class="skills-row"><b>Data</b> PostgreSQL, SQLite, Redis, Prisma ORM, Supabase</div>
+    <div class="skills-row"><b>Tools</b> Git, GitHub, Vercel, Render, Cloudinary, AbuseIPDB API, Gmail SMTP, Flask, Flask-SocketIO</div>
+  </section>
+
+  <section>
+    <h2>Certifications</h2>
+    <div class="two-col">
+      <div class="muted">Cybersecurity Job Simulation — JPMorgan Chase (Forage), 2024</div>
+      <div class="muted">Cybersecurity &amp; Fraud Prevention — Mastercard (Forage), 2024</div>
+      <div class="muted">Data Analytics &amp; Visualization — Accenture (Forage), 2024</div>
+      <div class="muted">Cloud Security Risks — Google Cloud (Coursera), 2024</div>
+      <div class="muted">Cyber Security &amp; Ethical Hacking Bootcamp — LetsUpgrade ×NSDC, 2024</div>
+      <div class="muted">Intro to Cybersecurity Awareness / IT for Business — HP LIFE, 2024</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Additional</h2>
+    <ul>
+      <li>Japanese: actively studying (aiming for JLPT N5); researching Japan work-visa pathways (SSW, Engineer/Specialist in Humanities)</li>
+      <li>Crew member, COSCON Nagpur — event held in partnership with the Japan Foundation &amp; Embassy of Japan in India</li>
+      <li>Best Delegate Award — DELMUN 7.0 Model United Nations</li>
+    </ul>
+  </section>
+</body>
+</html>

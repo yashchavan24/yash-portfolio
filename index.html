@@ -5,6 +5,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Yash Chavan — Cybersecurity &amp; Full-Stack Developer</title>
 <meta name="description" content="Yash Chavan — cybersecurity student and full-stack developer from Nagpur, India, seeking fresher opportunities in Japan.">
+<link rel="canonical" href="https://yash-portfolio-henna.vercel.app/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#0B1220">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Yash Chavan">
+<meta property="og:title" content="Yash Chavan — Cybersecurity &amp; Full-Stack Developer">
+<meta property="og:description" content="B.Tech Cyber Security student shipping real, deployed security tools and full-stack apps. Seeking a fresher role in Japan.">
+<meta property="og:url" content="https://yash-portfolio-henna.vercel.app/">
+<meta property="og:image" content="https://yash-portfolio-henna.vercel.app/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Yash Chavan — Cybersecurity &amp; Full-Stack Developer">
+<meta name="twitter:description" content="B.Tech Cyber Security student shipping real, deployed security tools and full-stack apps. Seeking a fresher role in Japan.">
+<meta name="twitter:image" content="https://yash-portfolio-henna.vercel.app/og-image.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
@@ -15,13 +28,17 @@
   <div class="nav-inner">
     <a href="index.html" class="logo">yash<span>.chavan</span></a>
     <nav class="nav-links">
-      <span class="page-links" style="display:flex; gap:30px;">
+      <span class="page-links" id="pageLinks">
         <a href="index.html">Home</a>
         <a href="projects.html">Projects</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
+        <a href="resume.pdf" target="_blank" rel="noopener" class="nav-cta">Résumé ↗</a>
       </span>
       <button id="langToggle" aria-label="Toggle language">日本語</button>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="pageLinks">
+        <span></span><span></span><span></span>
+      </button>
     </nav>
   </div>
 </header>
@@ -46,12 +63,16 @@
         <a class="btn btn-ghost" href="contact.html">
           <span data-en>Get in Touch</span><span data-jp>お問い合わせ</span>
         </a>
+        <a class="btn btn-ghost" href="resume.pdf" target="_blank" rel="noopener">
+          <span data-en>Download Résumé ↓</span><span data-jp>履歴書をダウンロード ↓</span>
+        </a>
       </div>
       <div class="hero-loc">
         <span><strong data-en>Based in</strong><strong data-jp>拠点</strong> — Nagpur, Maharashtra, India</span>
         <span><strong data-en>Targeting</strong><strong data-jp>希望勤務地</strong> — Japan 🇯🇵</span>
         <span><strong data-en>Status</strong><strong data-jp>現在の状況</strong> — <span data-en>Fresher, open to relocate</span><span data-jp>新卒、転居可</span></span>
         <span><strong data-en>Open to</strong><strong data-jp>希望職種</strong> — <span data-en>Cyber Security Analyst / Engineer</span><span data-jp>サイバーセキュリティアナリスト・エンジニア</span></span>
+        <span><strong data-en>Japanese</strong><strong data-jp>日本語</strong> — <span data-en>actively studying (aiming for JLPT N5)</span><span data-jp>学習中（JLPT N5を目標）</span></span>
       </div>
     </div>
   </section>
@@ -86,6 +107,7 @@
       </div>
       <div class="grid-cards">
         <article class="card">
+          <img class="card-media" src="images/network-dashboard.png" alt="Network Security Dashboard showing live traffic, suspicious IPs, port scanner and event log" loading="lazy">
           <div class="card-top">
             <h3>Network Security Dashboard</h3>
             <span class="year">2025</span>
@@ -98,9 +120,11 @@
           </ul>
           <div class="card-links">
             <a href="https://net-security-dashboard.vercel.app" target="_blank" rel="noopener">Live demo ↗</a>
+            <a href="https://github.com/yashchavan24/net-security-dashboard" target="_blank" rel="noopener">GitHub ↗</a>
           </div>
         </article>
         <article class="card">
+          <img class="card-media" src="images/nexus-feed.png" alt="Nexus social platform feed with communities, trending topics and who-to-follow" loading="lazy">
           <div class="card-top">
             <h3>Nexus — Social Community Platform</h3>
             <span class="year">2025</span>
@@ -113,6 +137,7 @@
           </ul>
           <div class="card-links">
             <a href="https://nexus-social-app-xi.vercel.app" target="_blank" rel="noopener">Live demo ↗</a>
+            <a href="https://github.com/yashchavan24/nexus-social-app" target="_blank" rel="noopener">GitHub ↗</a>
           </div>
         </article>
       </div>
@@ -147,6 +172,24 @@
   </div>
 </footer>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Yash Chavan",
+  "jobTitle": "Cybersecurity & Full-Stack Developer",
+  "url": "https://yash-portfolio-henna.vercel.app/",
+  "email": "mailto:yashchavan.2332@gmail.com",
+  "address": { "@type": "PostalAddress", "addressLocality": "Nagpur", "addressRegion": "Maharashtra", "addressCountry": "IN" },
+  "alumniOf": "St. Vincent Pallotti College of Engineering & Technology",
+  "knowsAbout": ["Network Security", "Threat Detection", "Python", "Next.js", "TypeScript", "Full-Stack Development"],
+  "seeks": "Entry-level cybersecurity / full-stack role in Japan",
+  "sameAs": [
+    "https://github.com/yashchavan24",
+    "https://linkedin.com/in/yash-chavan-b42905292"
+  ]
+}
+</script>
 <script src="script.js"></script>
 </body>
 </html>

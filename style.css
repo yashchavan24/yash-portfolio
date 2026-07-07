@@ -135,11 +135,61 @@ header.site-nav {
   transition: border-color 0.2s ease;
 }
 #langToggle:hover { border-color: var(--accent-1); }
-.nav-toggle { display: none; }
+.page-links { display: flex; gap: 30px; }
+.nav-cta {
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  padding: 7px 14px;
+  border-radius: 999px;
+  background: var(--gradient);
+  color: #fff;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.nav-cta:hover { transform: translateY(-1px); box-shadow: 0 8px 20px -8px rgba(123, 92, 250, 0.6); }
+.nav-toggle {
+  display: none;
+  background: transparent;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  width: 40px;
+  height: 36px;
+  cursor: pointer;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 4px;
+}
+.nav-toggle span {
+  display: block;
+  width: 18px;
+  height: 2px;
+  background: var(--text);
+  border-radius: 2px;
+}
 
 @media (max-width: 720px) {
-  .nav-links { gap: 16px; }
-  .nav-links .page-links { display: none; }
+  .nav-links { gap: 14px; }
+  .nav-toggle { display: inline-flex; }
+  .nav-inner { position: relative; }
+  .page-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    gap: 0;
+    background: rgba(11, 18, 32, 0.98);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--line);
+    padding: 6px 0;
+  }
+  .page-links.open { display: flex; }
+  .page-links a { padding: 13px 28px; }
+  .page-links a.active::after { display: none; }
 }
 
 /* ---------- Buttons ---------- */
@@ -439,6 +489,24 @@ footer .socials a:hover { color: var(--accent-1); }
   .hero-scan { animation: none; opacity: 0.25; }
   html { scroll-behavior: auto; }
 }
+
+/* ---------- Project thumbnails ---------- */
+.card-media {
+  display: block;
+  width: calc(100% + 56px);
+  margin: -28px -28px 18px;
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+  border-bottom: 1px solid var(--line);
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: top center;
+  background: var(--bg-panel-raised);
+}
+
+/* ---------- Static contact card (non-link) ---------- */
+.contact-card.static { cursor: default; }
+.contact-card.static:hover { border-color: var(--line); transform: none; }
 
 /* language visibility helper */
 [data-jp] { display: none; }
